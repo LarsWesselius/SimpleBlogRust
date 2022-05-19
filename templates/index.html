@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h1>Simple Blog - Blog programming example</h1>
+<section class="mb-5 mt-5">
+    <p>Hi! This site purely exists as an example on how to write a <strong>super simple blog system</strong> in different programming languages. At the top, you should be able to select different programming languages and hopefully, this page and post will look exactly the same.</p>
+    <h2>Requirements</h2>
+    <p>I wanted to make an extremely basic example of how this blog would look in different languages, so the requirements are quite straightfoward;</p>
+    <ul>
+        <li>
+            Home page should contain a top navigation bar and it should include;
+            <ul>
+                <li>Title</li>
+                <li>Links to the different programming language variants of this blog</li>
+            </ul>
+        </li>
+        <li>
+            Home page should show the latest blog post, consisting of;
+            <ul>
+                <li>Title</li>
+                <li>Author</li>
+                <li>Unix timestamp</li>
+                <li>Content</li>
+            </ul>
+        </li>
+        <li>
+            Home page should have a section on the right of the blog post, containing;
+            <ul>
+                <li>A list of the previous posts</li>
+            </ul>
+        </li>
+        <li>The content of the post should support Markdown</li>
+        <li>There should be a simple HTML footer with some fake copyright information</li>
+    </ul>
+    <p>Furthermore, there should be a page where you can <em>create</em> a new post. It is also good to indicate that this page is implemented on each of the languages and should be the same across all of them.</p>
+    <h2>Tech</h2>
+    <p>All sites run on separate Azure App Services in Docker containers. See the respective repositories for examples of this and explanation of the code.</p>
+    <h2>Disclaimer</h2>
+    <p>Please don't use this on anything even remotely close to production. In fact, this code should not be in the vicinity, or even in earshot of any production server.</p>
+</section>
+
+{% endblock content %}
